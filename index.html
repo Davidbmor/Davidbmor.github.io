@@ -14,14 +14,15 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px;
-      background-color:#FFA500;
+      background-color: #FFA500;
     }
 
     .logo {
-      width: 50px; 
+      width: 50px;
     }
+
     .logo img {
-      width: 50px; 
+      width: 50px;
     }
 
     nav {
@@ -33,15 +34,49 @@
       text-decoration: none;
       color: #333;
     }
-    
-  footer {
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 10px 0;
-  }
 
-    
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-container input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .offers-container {
+      max-width: 800px;
+      margin: 20px auto; /* Márgenes automáticos en la parte superior e inferior, centrando el contenedor */
+      padding: 20px;
+    }
+
+    .offers-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      background-color: #FFA500; /* Añadido el color de fondo */
+      padding: 10px; /* Añadido el relleno */
+    }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .offer-item {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
   </style>
 </head>
 <body>
@@ -56,7 +91,42 @@
       <a href="#">Opción 3</a>
       <a href="#">Opción 4</a>
     </nav>
+    <div class="search-container">
+      <form action="#" method="get">
+        <input type="text" placeholder="Buscar" name="search">
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
   </header>
+
+  <div class="offers-container">
+    <div class="offers-title">
+      <p>Nuestras Ofertas</p>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-item">
+        <img src="imagenes/oferta1.jpg" alt="Oferta 1">
+        <p>Oferta 1</p>
+      </div>
+      <div class="offer-item">
+        <img src="imagenes/oferta2.jpg" alt="Oferta 2">
+        <p>Oferta 2</p>
+      </div>
+      <div class="offer-item">
+        <img src="imagenes/oferta3.jpg" alt="Oferta 3">
+        <p>Oferta 3</p>
+      </div>
+      <div class="offer-item">
+        <img src="imagenes/oferta4.jpg" alt="Oferta 4">
+        <p>Oferta 4</p>
+      </div>
+      <div class="offer-item">
+        <img src="imagenes/oferta5.jpg" alt="Oferta 5">
+        <p>Oferta 5</p>
+      </div>
+      <!-- Puedes agregar más elementos según sea necesario -->
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2023 Hamburguesería Barrera. Todos los derechos reservados. |

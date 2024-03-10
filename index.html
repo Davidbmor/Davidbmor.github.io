@@ -3,227 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #FFA500;
-    }
-
-    .logo {
-      width: 50px;
-    }
-
-    .logo img {
-      width: 50px;
-    }
-
-    nav {
-      display: flex;
-    }
-
-    nav a {
-      margin-left: 15px;
-      text-decoration: none;
-      color: #333;
-      font-size: 18px;
-      transition: font-size 0.3s, color 0.3s;
-    }
-
-    nav a:hover {
-      font-size: 20px;
-      color: #FF4500; 
-    }
-
-    .selected {
-      font-size: 20px;
-      color: #FF4500; 
-    }
-
-    nav {
-      display: flex;
-    }
-
-    .search-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .search-container input {
-      padding: 5px;
-      margin-right: 10px;
-    }
-
-    .offers-container {
-      max-width: 800px;
-      margin: 20px auto; 
-      padding: 20px;
-    }
-
-    .offers-title {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-      background-color: #FFA500; 
-      padding: 10px; 
-    }
-
-    .offers-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
-    }
-
-    .offer-item {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-    }
-    .section-container {
-      max-width: 800px;
-      margin: 20px auto; 
-      padding: 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #FFA500;
-    }
-
-    .section-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .section-item {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-      background-color: #fff;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .section-item:hover {
-      transform: scale(1.05);
-    }
-
-    .section-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-
-    .offers-title {
-      background-color: #FFA500; 
-      padding: 15px;
-    }
-
-    section {
-      display: flex;
-      justify-content: space-between;
-      background-color: #FFA500; 
-      padding: 20px;
-    }
-    .content {
-      flex: 0 0 30%;
-      padding: 20px;
-      color: white;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #fff;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      clear: both; 
-      position: relative;
-      margin-top: 20px; 
-      margin-bottom: 20px;
-    }
-
-    .copyright {
-      float: left;
-    }
-
-    .social-icons {
-      float: right;
-      margin-top: 10px;
-    }
-
-    .social-icons a {
-      margin-left: 10px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-    }
-
-    .pedido-form {
-      background-color: #FFA500;
-      padding: 80px;
-      border-radius: 10px;
-      max-width: 400px;
-      width: 100%;
-      margin: 20px auto; 
-    }
-    .pedido-form h2 {
-      color: #fff;
-      text-align: center;
-    }
-    .pedido-form label {
-      color: #fff;
-      display: block;
-      margin-bottom: 8px;
-    }
-    .pedido-form input[type="text"],
-    .pedido-form input[type="tel"],
-    .pedido-form input[type="email"],
-    .pedido-form select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: none;
-    }
-    .pedido-form input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 10px;
-    }
-    .pedido-form input[type="submit"]:hover {
-      background-color: #555;
-    }
-
+   
   </style>
 </head>
 <body>
@@ -233,12 +15,12 @@
       <img src="imagenes/logo.jpg" alt="Logo">
     </div>
     <nav>
-      <a href="#">Ofertas</a>
-      <a href="#">Ensaladas</a>
-      <a href="#">Hamburguesas</a>
-      <a href="#">Especiales</a>
-      <a href="#">Acerca de</a>
-      <a href="#">Pedido</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#ensaladas">Ensaladas</a>
+      <a href="#hamburguesas">Hamburguesas</a>
+      <a href="#especiales">Especiales</a>
+      <a href="#acerca-de">Acerca de</a>
+      <a href="#pedido">Pedido</a>
     </nav>
     <div class="search-container">
       <form action="#" method="get">
@@ -248,7 +30,7 @@
     </div>
   </header>
 
-  <div class="offers-container">
+  <div class="offers-container" id="ofertas">
     <div class="offers-title">
       <p>Nuestras Ofertas</p>
     </div>
@@ -281,7 +63,7 @@
   </div>
 
    <!-- Ensaladas -->
-   <div class="section-container">
+   <div class="section-container" id="ensaladas">
     <div class="section-title">
       <p>Nuestras Ensaladas</p>
     </div>
@@ -314,7 +96,7 @@
   </div>
 
   <!-- Hamburguesas -->
-  <div class="section-container">
+  <div class="section-container" id="hamburguesas">
     <div class="section-title">
       <p>Nuestras Hamburguesas</p>
     </div>
@@ -347,7 +129,7 @@
   </div>
 
   <!-- Especiales -->
-  <div class="section-container">
+  <div class="section-container" id="especiales">
     <div class="section-title">
       <p>Nuestros Especiales</p>
     </div>
@@ -367,8 +149,7 @@
     </div>
   </div>
 
-  <!-- Sección informativa -->
-  <section>
+  <section id="acerca-de">
     <div class="content">
       <img src="Imagenes/Local.jpg" alt="Descripción de la imagen" style="width: 100%;">
       <p>Somos mucho más que una simple hamburguesería. En Hamburgueseria Barrera, nos apasiona ofrecer una experiencia culinaria única y deliciosa para todos los amantes de las hamburguesas.</p>
@@ -399,8 +180,7 @@
     </div>
   </section>
 
-  <!-- Último contenedor del pedido -->
-  <div class="pedido-form">
+  <div class="pedido-form" id="pedido">
     <h2>Realizar Pedido</h2>
     <form>
       <label for="nombre">Nombre:</label>
@@ -427,7 +207,6 @@
     </form>
   </div>
 
-  <!-- Footer -->
   <footer>
     <div class="copyright">
       <p>&copy; 2023 Hamburguesería Barrera. Todos los derechos reservados.</p>

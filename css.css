@@ -33,12 +33,12 @@ body {
 
   nav a:hover {
     font-size: 20px;
-    color: #FF4500; /* Cambia a un color que no desentone */
+    color: #FF4500; 
   }
 
   .selected {
     font-size: 20px;
-    color: #FF4500; /* Color seleccionado */
+    color: #FF4500;
   }
 
   nav {
@@ -81,6 +81,14 @@ body {
     text-align: center;
   }
 
+  
+.offer-item img {
+  width: 100%; 
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 10px;
+}
   .section-container {
     max-width: 800px;
     margin: 20px auto; 
@@ -160,9 +168,9 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 70px ;
     clear: both; 
-    position: relative;
+    
   }
 
   .copyright {
@@ -189,6 +197,7 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .pedido-form h2 {

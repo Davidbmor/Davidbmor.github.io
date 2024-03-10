@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -42,12 +39,12 @@
 
     nav a:hover {
       font-size: 20px;
-      color: #FF4500; /* Cambia a un color que no desentone */
+      color: #FF4500; 
     }
 
     .selected {
       font-size: 20px;
-      color: #FF4500; /* Color seleccionado */
+      color: #FF4500; 
     }
 
     nav {
@@ -134,17 +131,6 @@
       padding: 15px;
     }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      clear: both;
-    }
-
     section {
       display: flex;
       justify-content: space-between;
@@ -170,11 +156,23 @@
       text-align: left;
       border-bottom: 1px solid #fff;
     }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      clear: both; 
+      position: relative;
+      margin-top: 20px; 
+      margin-bottom: 20px;
+    }
+
+    .copyright {
+      float: left;
+    }
 
     .social-icons {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      float: right;
       margin-top: 10px;
     }
 
@@ -183,6 +181,47 @@
       color: #fff;
       text-decoration: none;
       font-size: 20px;
+    }
+
+    .pedido-form {
+      background-color: #FFA500;
+      padding: 80px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      margin: 20px auto; 
+    }
+    .pedido-form h2 {
+      color: #fff;
+      text-align: center;
+    }
+    .pedido-form label {
+      color: #fff;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .pedido-form input[type="text"],
+    .pedido-form input[type="tel"],
+    .pedido-form input[type="email"],
+    .pedido-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .pedido-form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .pedido-form input[type="submit"]:hover {
+      background-color: #555;
     }
 
   </style>
@@ -200,8 +239,6 @@
       <a href="#">Especiales</a>
       <a href="#">Acerca de</a>
       <a href="#">Pedido</a>
-
-
     </nav>
     <div class="search-container">
       <form action="#" method="get">
@@ -273,7 +310,6 @@
         <img src="imagenes/ensalada2.jpg" alt="Ensalada 2">
         <p>Ensalada 2</p>
       </div>
-   
     </div>
   </div>
 
@@ -307,7 +343,6 @@
         <img src="imagenes/hamburguesa2.jpg" alt="Hamburguesa 2">
         <p>Hamburguesa 2</p>
       </div>
-
     </div>
   </div>
 
@@ -329,14 +364,14 @@
         <img src="imagenes/especial2.jpg" alt="Especial 2">
         <p>Especial 2</p>
       </div>
-     
     </div>
   </div>
 
+  <!-- Sección informativa -->
   <section>
     <div class="content">
       <img src="Imagenes/Local.jpg" alt="Descripción de la imagen" style="width: 100%;">
-      <p>Somos mucho más que una simple hamburguesería. En Hamburgueseria Barrera , nos apasiona ofrecer una experiencia culinaria única y deliciosa para todos los amantes de las hamburguesas.</p>
+      <p>Somos mucho más que una simple hamburguesería. En Hamburgueseria Barrera, nos apasiona ofrecer una experiencia culinaria única y deliciosa para todos los amantes de las hamburguesas.</p>
     </div>
     <div class="content">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.616172866894!2d-0.12775834999999998!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ebeecf7f43%3A0x29c2bbcd7bcdbed3!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1606703124221!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -364,15 +399,44 @@
     </div>
   </section>
 
+  <!-- Último contenedor del pedido -->
+  <div class="pedido-form">
+    <h2>Realizar Pedido</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required><br><br>
+      
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required><br><br>
+      
+      <label for="tipo_entrega">Tipo de Entrega:</label>
+      <select id="tipo_entrega" name="tipo_entrega">
+        <option value="recoger">Recoger en tienda</option>
+        <option value="domicilio">Entrega a domicilio</option>
+      </select><br><br>
+      
+      <div id="direccion" style="display: none;">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+      </div>
+      
+      <input type="submit" value="Realizar Pedido">
+    </form>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2023 Hamburguesería Barrera. Todos los derechos reservados. |
-      Contacto: info@hamburgueseriabarrera.com</p>
+    <div class="copyright">
+      <p>&copy; 2023 Hamburguesería Barrera. Todos los derechos reservados.</p>
+    </div>
     <div class="social-icons">
       <a href="#" target="_blank">Facebook</a>
       <a href="#" target="_blank">Twitter</a>
       <a href="#" target="_blank">Instagram</a>
     </div>
   </footer>
-
 </body>
 </html>
